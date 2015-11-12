@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\GITHUB\Preparing-For-Toeic-Test\Toeic\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="D:\GITHUB\Preparing-For-Toeic-Test\Toeic\app\build\intermediates\pre-dexed\debug\classes-3c6bcceada2bf508af624b4ff92bf030bd98a542.jar" />
+    </item>
+
+</items>
