@@ -14,7 +14,6 @@ public class SAXXMLHandler extends DefaultHandler{
     private List<Representative> lessons;
     private String tempVal;
     private Representative tempLesson;
-
     public SAXXMLHandler() {
         lessons = new ArrayList<Representative>();
     }
@@ -22,6 +21,7 @@ public class SAXXMLHandler extends DefaultHandler{
     public List<Representative> getLessons() {
         return lessons;
     }
+
 
     // Event Handlers
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {

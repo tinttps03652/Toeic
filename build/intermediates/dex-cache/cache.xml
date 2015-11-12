@@ -2,11 +2,53 @@
 <items version="2" >
 
     <item
-        jar="D:\GITHUB\Preparing-For-Toeic-Test\Toeic\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
+        jar="C:\Users\Han\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-f184d76d4addc3bd787ec79ce66dd2c997d5dfc7.jar" />
+    </item>
+    <item
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-07675f1f1aaf7c3d5e5ca60058f597a7465788cf.jar" />
+    </item>
+    <item
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-ec7cf12100a3c7a69ab40f38ffc02f7d418b8980.jar" />
+    </item>
+    <item
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-c6a56cf3484fd2a8f795a690dcdcb39b25816976.jar" />
+    </item>
+    <item
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="D:\GITHUB\Preparing-For-Toeic-Test\Toeic\app\build\intermediates\pre-dexed\debug\classes-3c6bcceada2bf508af624b4ff92bf030bd98a542.jar" />
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-81dbffdc8e888d09a030df866c2862b31de23ddf.jar" />
+    </item>
+    <item
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-55b598555105d1898885d6c49eb48b48babb7fce.jar" />
+    </item>
+    <item
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-886fc29e1266c208748db7db3be1a9319f991940.jar" />
     </item>
 
 </items>

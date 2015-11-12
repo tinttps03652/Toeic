@@ -5,6 +5,6 @@
     <corners android:radius="8px"></corners>
 
     <stroke
-        android:width="2dp"
+        android:width="1dp"
         android:color="#eee"></stroke>
-</shape><!-- From: file:/D:/GITHUB/Preparing-For-Toeic-Test/Toeic/app/src/main/res/drawable/rectangle.xml -->
+</shape><!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/drawable/rectangle.xml -->

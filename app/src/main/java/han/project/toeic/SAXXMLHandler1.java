@@ -11,15 +11,15 @@ import java.util.List;
  * Created by Han on 08/11/2015.
  */
 public class SAXXMLHandler1 extends DefaultHandler{
-    private List<Representative> lessons;
+    private List<WordModel> words;
     private String tempVal;
-    private Representative tempLesson;
+    private WordModel tempWord;
     public SAXXMLHandler1() {
-        lessons = new ArrayList<Representative>();
+        words = new ArrayList<WordModel>();
     }
 
-    public List<Representative> getLessons() {
-        return lessons;
+    public List<WordModel> getWords() {
+        return words;
     }
 
 
@@ -27,9 +27,9 @@ public class SAXXMLHandler1 extends DefaultHandler{
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         // reset
         tempVal = "";
-        if (qName.equalsIgnoreCase("lesson")) {
+        if (qName.equalsIgnoreCase("words")) {
             // create a new instance of mobile
-            tempLesson = new Representative();
+            tempWord = new WordModel();
         }
     }
 
@@ -38,15 +38,17 @@ public class SAXXMLHandler1 extends DefaultHandler{
     }
 
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        if (qName.equalsIgnoreCase("lesson")) {
+        if (qName.equalsIgnoreCase("words")) {
             // add it to the list
-            lessons.add(tempLesson);
-        } else if (qName.equalsIgnoreCase("title")) {
-            tempLesson.setTitle(tempVal);
+            words.add(tempWord);
+        } else if (qName.equalsIgnoreCase("word")) {
+            tempWord.setWord(tempVal);
         } else if (qName.equalsIgnoreCase("meaning")) {
-            tempLesson.setMeaning(tempVal);
+            tempWord.setMeaning(tempVal);
+        } else if (qName.equalsIgnoreCase("vietnamese")) {
+            tempWord.setVietnamese(tempVal);
         } else if (qName.equalsIgnoreCase("image")) {
-            tempLesson.setImage(tempVal);
+            tempWord.setImage(tempVal);
         }
     }
 

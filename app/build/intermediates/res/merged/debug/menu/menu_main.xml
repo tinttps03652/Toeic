@@ -35,4 +35,4 @@
         android:title="@string/action_settings"
         app:showAsAction="ifRoom" />
 </menu>
-<!-- From: file:/D:/GITHUB/Preparing-For-Toeic-Test/Toeic/app/src/main/res/menu/menu_main.xml -->
+<!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/menu/menu_main.xml -->

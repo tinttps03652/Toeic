@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:divider="#fff"
-        android:dividerHeight="6dp"
+        android:dividerHeight="3dp"
         android:id="@+id/listView" />
 
     <!--<android.support.v7.widget.RecyclerView-->

@@ -16,6 +16,7 @@ import javax.xml.parsers.SAXParserFactory;
 public class LessonsParser {
     public static List<Representative> parse(InputStream is){
         List<Representative> lessons = null;
+        List<WordModel> words = null ;
         try{
             // create a XMLReader from SAXParser
             XMLReader xmlReader = SAXParserFactory.newInstance().newSAXParser().getXMLReader();
@@ -32,4 +33,23 @@ public class LessonsParser {
         }
         return lessons;
     }
+    public static List<WordModel> parseWords(InputStream is){
+        List<WordModel> words = null ;
+        try{
+            // create a XMLReader from SAXParser
+            XMLReader xmlReader = SAXParserFactory.newInstance().newSAXParser().getXMLReader();
+            // create a SAXXMLHandler
+            SAXXMLHandler1 saxHandler = new SAXXMLHandler1();
+            // store handler in XMLReader
+            xmlReader.setContentHandler(saxHandler);
+            // the process starts
+            xmlReader.parse(new InputSource(is));
+            // get the `Word list`
+            words = saxHandler.getWords();
+        }catch(Exception ex){
+            Log.d("XML", "SAXXMLParser: parse() failed");
+        }
+        return words;
+    }
+   
 }
