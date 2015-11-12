@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private  void setupTabIcons(){
         TextView tabIntro = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab,null);
-        tabIntro.setText("Vocabulary");
+        tabIntro.setText("Vocab");
         tabIntro.setCompoundDrawablesWithIntrinsicBounds(0,R.mipmap.ic_tab_white_24dp,0,0);
         tabLayout.getTabAt(0).setCustomView(tabIntro);
 

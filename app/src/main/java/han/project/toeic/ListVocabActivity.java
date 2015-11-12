@@ -30,7 +30,40 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
         lv = (ListView)findViewById(R.id.listView2);
         list = new ArrayList<WordModel>();
         int index = (int)getIntent().getIntExtra("index",-1);
-        generateContracts();
+        switch (index){
+            case 0:
+                generateContracts();
+                break;
+            case 1:
+                generateMarketing();
+                break;
+            case 2:
+                generateWarranties();
+                break;
+            case 3:
+                generateBusiness_Planning();
+                break;
+            case 4:
+                generateConferences();
+                break;
+            case 5:
+                generateComputers_internet();
+                break;
+            case 6:
+                generateOfficeTech();
+                break;
+            case 7:
+                generateOfficeProcedures();
+                break;
+            case 8:
+                generateElectronics();
+                break;
+            case 9:
+                generateCorrespondence();
+                break;
+
+        }
+
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -42,15 +75,7 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        /*
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
+
     }
     @Override
     public void onDestroy() {
@@ -71,6 +96,96 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             return;
         }
     }
+    public void generateMarketing(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("marketing.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateWarranties(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("warranties.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateBusiness_Planning(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("business_planning.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateConferences(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("conferences.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateOfficeTech(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("office_technology.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateCorrespondence(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("correspondence.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateComputers_internet(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("computers_internet.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateOfficeProcedures(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("office_procedures.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+    public void generateElectronics(){
+        try {
+            list = LessonsParser.parseWords(this.getAssets().open("electronics.xml"));
+            adapter = new WordAdapter(this,list);
+            lv.setAdapter(adapter);
+        }catch(Exception e){
+            Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
 
     @Override
     public void onInit(int status) {
@@ -82,15 +197,11 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");
             } else {
-                //speakOut();
             }
 
         } else {
             Log.e("TTS", "Initilization Failed!");
         }
     }
-    private void speakOut() {
 
-
-    }
 }

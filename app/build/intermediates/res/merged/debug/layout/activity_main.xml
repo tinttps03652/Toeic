@@ -25,6 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabGravity="fill"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/toolbar"
+            app:tabIndicatorHeight="3dp"
             app:tabMode="fixed" />
     </android.support.design.widget.AppBarLayout>
 
