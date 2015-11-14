@@ -334,9 +334,24 @@
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
+    <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="chromeless">Chromeless</string>
+    <string name="def">Default</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
     <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/values/fonts.xml -->
     <eat-comment/>
     <string name="font_fontFamily_medium">sans-serif</string>
+    <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="minimal">Minimal</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="player_style">Player Style</string>
+    <string name="playerfragment_text">This is a YouTubePlayerFragment!</string>
+    <string name="playerview_text">This is a YouTubePlayerView!</string>
+    <string name="seconds">secs</string>
+    <string name="skip_to">Skip To</string>
     <!-- From: file:/D:/GITHUB/Toeic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

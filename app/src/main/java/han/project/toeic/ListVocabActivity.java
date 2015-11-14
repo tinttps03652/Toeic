@@ -1,9 +1,8 @@
 package han.project.toeic;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -13,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -22,13 +22,14 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
     List<WordModel> list;
     private TextToSpeech tts;
     WordModel word;
+    private MediaPlayer mp;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_vocab);
         tts = new TextToSpeech(this, this);
         lv = (ListView)findViewById(R.id.listView2);
-        list = new ArrayList<WordModel>();
+        list = new ArrayList<>();
         int index = (int)getIntent().getIntExtra("index",-1);
         switch (index){
             case 0:
@@ -68,8 +69,10 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                word = list.get(position);
-                tts.speak(word.getWord().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                    word = list.get(position);
+                    HashMap<String, String> params = new HashMap<>();
+                    tts.speak(word.getWord().toString(), TextToSpeech.QUEUE_FLUSH, params);
+
             }
         });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -77,6 +80,8 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
+
+
     @Override
     public void onDestroy() {
         // Don't forget to shutdown tts!
@@ -93,7 +98,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateMarketing(){
@@ -103,7 +107,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateWarranties(){
@@ -113,7 +116,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateBusiness_Planning(){
@@ -123,7 +125,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateConferences(){
@@ -133,7 +134,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateOfficeTech(){
@@ -143,7 +143,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateCorrespondence(){
@@ -153,7 +152,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateComputers_internet(){
@@ -163,7 +161,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateOfficeProcedures(){
@@ -173,7 +170,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
     public void generateElectronics(){
@@ -183,7 +179,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(this,"Error ",Toast.LENGTH_SHORT).show();
-            return;
         }
     }
 
@@ -196,7 +191,6 @@ public class ListVocabActivity extends AppCompatActivity implements TextToSpeech
             if (result == TextToSpeech.LANG_MISSING_DATA
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");
-            } else {
             }
 
         } else {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
@@ -13,8 +13,12 @@ ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-32:12
 	android:versionCode
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:5:5-30:19
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:22:5-20
@@ -67,6 +71,14 @@ ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:26:13-28:66
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:28:17-63
 	android:name
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:27:17-63
+activity#han.project.toeic.VideoListDemoActivity
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:30:9-35:20
+	android:label
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:33:13-52
+	android:configChanges
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:32:13-74
+	android:name
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:31:13-50
 uses-sdk
 INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43

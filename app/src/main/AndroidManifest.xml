@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="han.project.toeic">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +26,12 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="han.project.toeic.MainActivity" />
+        </activity>
+        <activity
+            android:name=".VideoListDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/playerview_text" >
+
         </activity>
     </application>
 

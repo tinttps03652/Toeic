@@ -2,15 +2,12 @@ package han.project.toeic;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -20,6 +17,7 @@ import java.util.List;
 public class WordAdapter extends BaseAdapter{
     List<WordModel> list;
     Activity ac;
+
     public WordAdapter(Activity ac,List<WordModel> list){
         this.ac = ac;
         this.list = list;
@@ -45,7 +43,7 @@ public class WordAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = ac.getLayoutInflater();
-        word_item item;
+        final word_item item;
         if(view == null){
             item = new word_item();
             view = inflater.inflate(R.layout.word_item,null);
