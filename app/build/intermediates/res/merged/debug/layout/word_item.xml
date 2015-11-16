@@ -55,13 +55,5 @@
         android:layout_centerVertical="true"
         android:src="@mipmap/third_volume" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chi tiet"
-        android:id="@+id/button2"
-        android:layout_below="@+id/textView3"
-        android:layout_alignEnd="@+id/textView" />
 </RelativeLayout>
 <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/layout/word_item.xml -->

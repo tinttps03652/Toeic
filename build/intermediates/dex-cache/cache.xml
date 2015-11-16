@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\GITHUB\Toeic\app\libs\YouTubeAndroidPlayerApi.jar"
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.4\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
-        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\YouTubeAndroidPlayerApi-fbaec55aef84b1b144fbc171a665718452728f28.jar" />
+        sha1="df559ab8a9d5d44cf0a49dbb2be402637b90ba90">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\release\classes-592604ae989ce27ee530eecc874c01704147172a.jar" />
     </item>
 
 </items>
