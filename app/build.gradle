@@ -27,4 +27,5 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.0.0'
     compile files('libs/YouTubeAndroidPlayerApi.jar')
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+
 }

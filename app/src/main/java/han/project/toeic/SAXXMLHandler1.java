@@ -49,6 +49,8 @@ public class SAXXMLHandler1 extends DefaultHandler{
             tempWord.setVietnamese(tempVal);
         } else if (qName.equalsIgnoreCase("image")) {
             tempWord.setImage(tempVal);
+        }else if (qName.equalsIgnoreCase("audio")) {
+            tempWord.setAudio(tempVal);
         }
     }
 

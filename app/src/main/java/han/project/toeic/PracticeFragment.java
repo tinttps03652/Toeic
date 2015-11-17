@@ -1,5 +1,6 @@
 package han.project.toeic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -31,7 +32,9 @@ public class PracticeFragment extends Fragment implements View.OnClickListener{
         adapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_multiple_choice,practice);
         lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         lv.setAdapter(adapter);
+
         start.setOnClickListener(this);
+
         return view;
     }
 
@@ -53,18 +56,18 @@ public class PracticeFragment extends Fragment implements View.OnClickListener{
             outputStrArr[i] = selectedItems.get(i);
         }
 
-        //Intent intent = new Intent(getActivity(),
-              //  ResultActivity.class);
+        Intent intent = new Intent(getActivity(),
+               Review_Activity.class);
 
         // Create a bundle object
         Bundle b = new Bundle();
         b.putStringArray("selectedItems", outputStrArr);
 
         // Add the bundle to the intent.
-       // intent.putExtras(b);
+        intent.putExtras(b);
 
-        // start the ResultActivity
-       // startActivity(intent);
+        // start the Review_Activity
+       startActivity(intent);
 
 
     }

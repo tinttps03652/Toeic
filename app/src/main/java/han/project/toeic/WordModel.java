@@ -10,14 +10,24 @@ public class WordModel implements Serializable{
     String meaning;
     String vietnamese;
     String image;
+    String audio;
     public WordModel(){
 
     }
-    public WordModel(String word, String meaning, String vietnamese, String image) {
+    public WordModel(String word, String meaning, String vietnamese, String image,String audio) {
         this.word = word;
         this.meaning = meaning;
         this.vietnamese = vietnamese;
         this.image = image;
+        this.audio = audio;
+    }
+
+    public String getAudio() {
+        return audio;
+    }
+
+    public void setAudio(String audio) {
+        this.audio = audio;
     }
 
     public String getMeaning() {

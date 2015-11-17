@@ -82,7 +82,7 @@ public final class VideoListDemoActivity extends Activity implements OnFullscree
   private View closeButton;
 
   private boolean isFullscreen;
-
+  int position;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -207,6 +207,7 @@ public final class VideoListDemoActivity extends Activity implements OnFullscree
     private static final List<VideoEntry> VIDEO_LIST;
     static {
       List<VideoEntry> list = new ArrayList<VideoEntry>();
+
       list.add(new VideoEntry("Lesson 1 Contracts Hợp đồng", "_bNeQIcCHYs"));
       list.add(new VideoEntry("Lesson 2 Marketing Thị trường", "RMiGyC67kJ8"));
       list.add(new VideoEntry("Lesson 3 Warranties Bảo hành", "qU9qCldVEec"));
@@ -257,7 +258,6 @@ public final class VideoListDemoActivity extends Activity implements OnFullscree
       list.add(new VideoEntry("Lesson 48 Health Insurance Bảo hiểm y tế", "ZC3OReR4YXI"));
       list.add(new VideoEntry("Lesson 49 Hospitals Bệnh viện", "TI7Ga645bZ4"));
       list.add(new VideoEntry("Lesson 50 Pharmacy Hiệu thuốc, phòng dược", "00nYQSU1fdc"));
-      list.add(new VideoEntry("Lesson 38 Trains Tàu hỏa", "fe7Ugyl8Fuc"));
       VIDEO_LIST = Collections.unmodifiableList(list);
     }
 

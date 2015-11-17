@@ -1,16 +1,13 @@
 package han.project.toeic;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -26,6 +23,8 @@ public class VocabFragment extends Fragment{
     Representative re = null;
     MyAdapter adapter;
     List<Representative> list;
+
+    private ActionBar supportActionBar;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,23 +44,27 @@ public class VocabFragment extends Fragment{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int index = position;
                 Intent i = new Intent(getActivity(), ListVocabActivity.class);
-                i.putExtra("index", index);
+                Representative obj  = list.get(position);
+                String title = obj.getTitle();
+                Bundle b = new Bundle();
+                b.putInt("index",index);
+                b.putString("title",title);
+                i.putExtras(b);
                 startActivity(i);
             }
         });
-
         return view;
     }
     private List<Representative> generateData() {
-        list = new ArrayList<Representative>();
+        list = new ArrayList<>();
         try{
             list = LessonsParser.parse(getActivity().getAssets().open("lessons.xml"));
-            //lv.setAdapter(adapter);
         }catch(Exception e){
             Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
         }
         return list;
     }
+
 
 
 }
