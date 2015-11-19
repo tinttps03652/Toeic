@@ -1,6 +1,5 @@
 package han.project.toeic;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -23,15 +22,10 @@ public class VocabFragment extends Fragment{
     Representative re = null;
     MyAdapter adapter;
     List<Representative> list;
-
-    private ActionBar supportActionBar;
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        generateData();
     }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -44,15 +38,17 @@ public class VocabFragment extends Fragment{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int index = position;
                 Intent i = new Intent(getActivity(), ListVocabActivity.class);
-                Representative obj  = list.get(position);
+                Representative obj = list.get(position);
                 String title = obj.getTitle();
                 Bundle b = new Bundle();
-                b.putInt("index",index);
-                b.putString("title",title);
+                b.putInt("index", index);
+                b.putString("title", title);
                 i.putExtras(b);
                 startActivity(i);
             }
         });
+
+
         return view;
     }
     private List<Representative> generateData() {

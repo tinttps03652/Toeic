@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:background="#fff"
+    android:padding="8dp"
     android:layout_height="match_parent">
 
     <ListView
@@ -10,16 +11,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:dividerHeight="3dp"
+        android:divider="#fff"
         android:layout_gravity="center_vertical"
-        android:divider="#ccc"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Start" />
 </RelativeLayout>
 <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/layout/practice_fragment.xml -->
