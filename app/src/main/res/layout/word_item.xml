@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/imageView"
-        android:textColor="#007ac1"
+        android:textColor="#0288D1"
         android:layout_toRightOf="@+id/imageView"
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium"

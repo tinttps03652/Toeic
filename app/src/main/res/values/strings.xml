@@ -118,4 +118,20 @@
         <item>Lesson 49 - Hospitals</item>
         <item>Lesson 50 - Pharmacy</item>
     </string-array>
+    <string-array name="video_list">
+        <item>Toeic Trick</item>
+        <item>600 Essential Words Vocabulary</item>
+        <item>600 Essential Words Listening</item>
+        <item>600 Essential Words Reading</item>
+        <item>600 Essential Words Practice</item>
+        <item>Toeic Listening Test</item>
+        <item>Toeic Grammar</item>
+        <item>Toeic Full Test</item>
+        <item>Toeic Listening Practice</item>
+        <item>Toeic - Analyst</item>
+        <item>Longman Toeic Test </item>
+        <item>Toeic Economy - Toeic Every day</item>
+        <item>Toeic VTV2 - MS Phuong</item>
+        <item>Stater Toeic Third Edition</item>
+    </string-array>
 </resources>

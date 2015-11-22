@@ -2,6 +2,7 @@ package han.project.toeic;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.joanzapata.pdfview.PDFView;
 import com.joanzapata.pdfview.listener.OnPageChangeListener;
@@ -13,7 +14,7 @@ import static java.lang.String.format;
 
 public class PDFViewActivity extends AppCompatActivity implements OnPageChangeListener {
     PDFView pdf;
-
+    private Toolbar toolbar;
     public static final String FILE[] = {"unit1_present_tenses.pdf", "unit2_past_tenses.pdf", "unit3_future_tenses.pdf",
             "unit4_v_ing.pdf", "unit5_to_infinitive.pdf", "unit6_bare_infinitive_gerund_or_infinitive.pdf", "unit7_modal_verbs.pdf",
             "unit8_sentences_elements.pdf", "unit9_passive_voice1.pdf", "unit10_passive_voice2.pdf", "unit11_comparisons.pdf",
@@ -27,8 +28,13 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdfview);
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         pdf = (PDFView) findViewById(R.id.pdfview);
         int position = getIntent().getIntExtra("position", -1);
+        String title = getIntent().getStringExtra("title");
+        getSupportActionBar().setTitle(title);
         pdfName = FILE[position];
         display(pdfName, true);
 

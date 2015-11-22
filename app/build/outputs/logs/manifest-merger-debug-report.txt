@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-71:12
 	package
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:7:5-57:19
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:7:5-69:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:22:5-20
@@ -31,6 +31,8 @@ MERGED from [de.hdodenhof:circleimageview:2.0.0] D:\GITHUB\Toeic\app\build\inter
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:11:9-35
+	android:uiOptions
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:13:9-53
 	android:allowBackup
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
@@ -38,13 +40,13 @@ MERGED from [de.hdodenhof:circleimageview:2.0.0] D:\GITHUB\Toeic\app\build\inter
 	android:theme
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:12:9-47
 activity#han.project.toeic.MainActivity
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:13:9-17:20
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:14:9-17:63
 	android:label
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:16:13-45
 	android:theme
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:16:13-51
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:17:13-51
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:15:13-41
 activity#han.project.toeic.ListVocabActivity
 ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:label
@@ -100,9 +102,17 @@ ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:46:9-54:20
 	android:name
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:47:13-44
 activity#han.project.toeic.Review_Activity
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:55:9-56:20
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:55:9-61:20
+	android:parentActivityName
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:57:13-55
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:55:19-50
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:56:13-44
+activity#han.project.toeic.ResultActivity
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:62:9-68:20
+	android:parentActivityName
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:63:13-55
+	android:name
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:62:19-49
 uses-sdk
 INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43

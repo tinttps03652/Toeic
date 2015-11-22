@@ -43,6 +43,7 @@ public class GrammarFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), PDFViewActivity.class);
                 i.putExtra("position",position);
+                i.putExtra("title",title[position].toString());
                 startActivity(i);
             }
         });

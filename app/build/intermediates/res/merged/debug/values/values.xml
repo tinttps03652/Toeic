@@ -107,6 +107,22 @@
         <item>Lesson 49 - Hospitals</item>
         <item>Lesson 50 - Pharmacy</item>
     </string-array>
+    <string-array name="video_list">
+        <item>Toeic Trick</item>
+        <item>600 Essential Words Vocabulary</item>
+        <item>600 Essential Words Listening</item>
+        <item>600 Essential Words Reading</item>
+        <item>600 Essential Words Practice</item>
+        <item>Toeic Listening Test</item>
+        <item>Toeic Grammar</item>
+        <item>Toeic Full Test</item>
+        <item>Toeic Listening Practice</item>
+        <item>Toeic - Analyst</item>
+        <item>Longman Toeic Test </item>
+        <item>Toeic Economy - Toeic Every day</item>
+        <item>Toeic VTV2 - MS Phuong</item>
+        <item>Stater Toeic Third Edition</item>
+    </string-array>
     <!-- From: file:/D:/GITHUB/Toeic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -141,9 +157,9 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="colorAccent">#c8e8ff</color>
-    <color name="colorPrimary">#125688</color>
-    <color name="colorPrimaryDark">#125688</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorPrimary">#199ad4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
     <!-- From: file:/D:/GITHUB/Toeic/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
@@ -181,7 +197,7 @@
     <color name="material_grey_900">#ff212121</color>
     <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="navigationBarColor">#000000</color>
+    <color name="navigationBarColor">#ffffff</color>
     <!-- From: file:/D:/GITHUB/Toeic/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -477,7 +493,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:windowActionBarOverlay">true</item>
+
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
@@ -1442,11 +1458,12 @@
 
     </style>
     <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowActionBarOverlay">true</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="han.project.toeic" >
+    package="han.project.toeic">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -9,17 +9,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme" >
+        android:theme="@style/MyMaterialTheme"
+        android:uiOptions="splitActionBarWhenNarrow">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/MyMaterialTheme" >
-        </activity>
+            android:theme="@style/MyMaterialTheme"></activity>
         <activity
             android:name=".ListVocabActivity"
             android:label="@string/title_activity_list_vocab"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/MyMaterialTheme" >
+            android:theme="@style/MyMaterialTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="han.project.toeic.MainActivity" />
@@ -28,7 +28,7 @@
             android:name=".VideoListDemoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/playerview_text"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="han.project.toeic.MainActivity" />
@@ -36,7 +36,7 @@
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,12 +47,24 @@
             android:name=".PDFViewActivity"
             android:label="PDFViewer"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/MyMaterialTheme" >
+            android:theme="@style/MyMaterialTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="han.project.toeic.MainActivity" />
         </activity>
-        <activity android:name=".Review_Activity" >
+        <activity
+            android:name=".Review_Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="han.project.toeic.MainActivity" />
+        </activity>
+        <activity android:name=".ResultActivity"
+            android:parentActivityName=".MainActivity">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="han.project.toeic.MainActivity" />
         </activity>
     </application>
 
