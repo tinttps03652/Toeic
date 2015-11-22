@@ -13,7 +13,7 @@ import javax.xml.parsers.SAXParserFactory;
 /**
  * Created by Han on 08/11/2015.
  */
-public class LessonsParser {
+public class Parser {
     public static List<Representative> parse(InputStream is){
         List<Representative> lessons = null;
         List<WordModel> words = null ;

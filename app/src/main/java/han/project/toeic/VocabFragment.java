@@ -11,25 +11,31 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Han on 18/10/2015.
  */
-public class VocabFragment extends Fragment{
+public class VocabFragment extends Fragment {
     ListView lv;
     Representative re = null;
     MyAdapter adapter;
     List<Representative> list;
+    AdView mAdView;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.vocab_fragment,container,false);
+        View view = inflater.inflate(R.layout.vocab_fragment, container, false);
         lv = (ListView) view.findViewById(R.id.listView);
         adapter = new MyAdapter(getActivity(), generateData());
         lv.setAdapter(adapter);
@@ -48,19 +54,23 @@ public class VocabFragment extends Fragment{
             }
         });
 
-
+        mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("BA562590DEC40F4051302BC23C801F64")
+                .build());
         return view;
     }
+
     private List<Representative> generateData() {
         list = new ArrayList<>();
-        try{
-            list = LessonsParser.parse(getActivity().getAssets().open("lessons.xml"));
-        }catch(Exception e){
+        try {
+            list = Parser.parse(getActivity().getAssets().open("lessons.xml"));
+        } catch (Exception e) {
             Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
         }
         return list;
     }
-
 
 
 }

@@ -1,11 +1,8 @@
 package han.project.toeic;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.graphics.drawable.Drawable;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -18,7 +15,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +31,7 @@ public class Review_Activity extends AppCompatActivity {
     int pos;
     int index;
     AudioPlayer au;
-    TextView score, pages,meaning;
+    TextView score, pages, meaning;
     Button next;
     EditText answer;
     ImageView img;
@@ -44,6 +40,7 @@ public class Review_Activity extends AppCompatActivity {
     int i = 0;
     int count = 0;
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +52,7 @@ public class Review_Activity extends AppCompatActivity {
         pages = (TextView) findViewById(R.id.page);
         next = (Button) findViewById(R.id.btnNext);
         img = (ImageView) findViewById(R.id.imageView4);
-        meaning = (TextView)findViewById(R.id.meaning);
+        meaning = (TextView) findViewById(R.id.meaning);
         playAudio = (ImageButton) findViewById(R.id.imageButton);
         answer = (EditText) findViewById(R.id.editText);
         index = getIntent().getIntExtra("index", -1);
@@ -93,7 +90,7 @@ public class Review_Activity extends AppCompatActivity {
                             next.setVisibility(View.GONE);
                             i = 0;
                             Intent i = new Intent(Review_Activity.this, ResultActivity.class);
-                            i.putExtra("score",score.getText().toString());
+                            i.putExtra("score", score.getText().toString());
                             startActivity(i);
                         }
                     } else {
@@ -115,69 +112,25 @@ public class Review_Activity extends AppCompatActivity {
         img.setImageDrawable(image);
         String audiofile = word.getAudio();
         au = new AudioPlayer(audiofile, Review_Activity.this);
-        meaning.setText(word.getMeaning()+"");
+        meaning.setText(word.getMeaning() + "");
         score.setText("Score: " + count + "");
         pages.setText((i + 1) + "/" + 12);
         answer.setText("");
     }
-    private void showDialog(){
+
+    private void showDialog() {
         final Dialog dialog = new Dialog(this);
         dialog.setTitle(word.getWord().toString());
 
     }
+
     public void generateData(String str) {
         try {
-            list = LessonsParser.parseWords(this.getAssets().open(str));
+            list = Parser.parseWords(this.getAssets().open(str));
         } catch (Exception e) {
             Toast.makeText(this, "Error " + e, Toast.LENGTH_SHORT).show();
         }
     }
 
-    public class AudioPlayer {
 
-        String fileName;
-        Context contex;
-        MediaPlayer mp;
-
-        //Constructor
-        public AudioPlayer(String name, Context context) {
-            fileName = name;
-            contex = context;
-            playAudio();
-        }
-
-        //Play Audio
-        public void playAudio() {
-            mp = new MediaPlayer();
-            try {
-                if (mp.isPlaying()) {
-                    mp.stop();
-                    mp.release();
-                    mp = new MediaPlayer();
-                }
-                AssetFileDescriptor descriptor = contex.getAssets()
-                        .openFd("audios/" + fileName);
-                mp.setDataSource(descriptor.getFileDescriptor(),
-                        descriptor.getStartOffset(), descriptor.getLength());
-                descriptor.close();
-                mp.prepare();
-                mp.setVolume(3f, 3f);
-
-                mp.start();
-
-            } catch (IllegalArgumentException e) {
-                e.printStackTrace();
-            } catch (IllegalStateException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        //Stop Audio
-        public void stop() {
-            mp.stop();
-        }
-
-    }
 }

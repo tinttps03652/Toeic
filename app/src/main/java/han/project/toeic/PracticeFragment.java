@@ -31,7 +31,7 @@ public class PracticeFragment extends Fragment{
         lv = (ListView) view.findViewById(R.id.listView4);
         list = new ArrayList<>();
         try{
-            list = LessonsParser.parse(getActivity().getAssets().open("lessons.xml"));
+            list = Parser.parse(getActivity().getAssets().open("lessons.xml"));
         }catch(Exception e){
             Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
         }

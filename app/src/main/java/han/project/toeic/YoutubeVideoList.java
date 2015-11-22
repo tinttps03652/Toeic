@@ -65,7 +65,7 @@ import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
  * rebuffering.
  */
 @TargetApi(13)
-public final class VideoListDemoActivity extends Activity implements OnFullscreenListener {
+public final class YoutubeVideoList extends Activity implements OnFullscreenListener {
 
     /**
      * The duration of the animation sliding up the video in portrait.
@@ -509,7 +509,7 @@ public final class VideoListDemoActivity extends Activity implements OnFullscree
         public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean restored) {
             this.player = player;
             player.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CUSTOM_LAYOUT);
-            player.setOnFullscreenListener((VideoListDemoActivity) getActivity());
+            player.setOnFullscreenListener((YoutubeVideoList) getActivity());
             if (!restored && videoId != null) {
                 player.cueVideo(videoId);
             }

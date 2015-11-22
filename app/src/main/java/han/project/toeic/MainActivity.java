@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
+
 
     }
     private void setupViewPager(ViewPager viewPager) {
@@ -138,6 +140,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.action_feedback:
                 feedback();
+                break;
+            case R.id.action_login:
+                Intent i = new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(i);
                 break;
 
         }

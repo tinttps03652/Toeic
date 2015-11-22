@@ -1,8 +1,5 @@
 package han.project.toeic;
 
-import android.content.Context;
-import android.content.res.AssetFileDescriptor;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +31,7 @@ public class ListVocabActivity extends AppCompatActivity {
         lv = (ListView) findViewById(R.id.listView2);
         list = new ArrayList<>();
         int index = (int) getIntent().getIntExtra("index", -1);
-        String title = (String)getIntent().getStringExtra("title");
+        String title = (String) getIntent().getStringExtra("title");
         try {
             pos = vocabulary[index];
             generateData(pos);
@@ -69,62 +65,13 @@ public class ListVocabActivity extends AppCompatActivity {
 
     public void generateData(String str) {
         try {
-            list = LessonsParser.parseWords(this.getAssets().open(str));
+            list = Parser.parseWords(this.getAssets().open(str));
             adapter = new WordAdapter(this, list);
             lv.setAdapter(adapter);
         } catch (Exception e) {
             Toast.makeText(this, "Error ", Toast.LENGTH_SHORT).show();
         }
     }
-
-    public class AudioPlayer {
-
-        String fileName;
-        Context contex;
-        MediaPlayer mp;
-
-        //Constructor
-        public AudioPlayer(String name, Context context) {
-            fileName = name;
-            contex = context;
-            playAudio();
-        }
-
-        //Play Audio
-        public void playAudio() {
-            mp = new MediaPlayer();
-            try {
-                if (mp.isPlaying()) {
-                    mp.stop();
-                    mp.release();
-                    mp = new MediaPlayer();
-                }
-                AssetFileDescriptor descriptor = contex.getAssets()
-                        .openFd("audios/" + fileName);
-                mp.setDataSource(descriptor.getFileDescriptor(),
-                        descriptor.getStartOffset(), descriptor.getLength());
-                descriptor.close();
-                mp.prepare();
-                mp.setVolume(3f, 3f);
-
-                mp.start();
-
-            } catch (IllegalArgumentException e) {
-                e.printStackTrace();
-            } catch (IllegalStateException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        //Stop Audio
-        public void stop() {
-            mp.stop();
-        }
-
-    }
-
 
 
 }

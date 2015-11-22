@@ -35,7 +35,7 @@ public class VideoFragment extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getActivity(),VideoListDemoActivity.class);
+                Intent i = new Intent(getActivity(),YoutubeVideoList.class);
                 int pos = position;
                 i.putExtra("position",pos);
                 startActivity(i);
