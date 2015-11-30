@@ -25,7 +25,7 @@ public class GrammarFragment extends Fragment {
     String title[] = {};
     String meaning[] = {};
     ListView lv;
-    GrammarAdapter adapter2;
+    GrammarAdapter adapter;
 
     @Nullable
     @Override
@@ -34,10 +34,8 @@ public class GrammarFragment extends Fragment {
         lv = (ListView) view.findViewById(R.id.listView3);
         title = getActivity().getResources().getStringArray(R.array.grammar_lessons);
         meaning = getActivity().getResources().getStringArray(R.array.grammar_meaning);
-        //adapter = new Adapter(getActivity());
-        //lv.setAdapter(adapter);
-        adapter2 = new GrammarAdapter(getActivity(), images, title, meaning);
-        lv.setAdapter(adapter2);
+        adapter = new GrammarAdapter(getActivity(), images, title, meaning);
+        lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

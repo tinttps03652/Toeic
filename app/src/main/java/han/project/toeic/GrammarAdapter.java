@@ -12,10 +12,10 @@ import android.widget.TextView;
  * Created by Han on 16/11/2015.
  */
 public class GrammarAdapter extends BaseAdapter{
-    Activity ac;
-    int images[];
-    String title[];
-    String meaning[];
+    public Activity ac;
+    public int images[];
+    public String title[];
+    public String meaning[];
     GrammarAdapter(Activity ac,int images[],String title[],String meaning[]){
         this.images = images;
         this.title = title;

@@ -11,6 +11,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import han.project.mode.WordModel;
+import han.project.util.AudioPlayer;
+import han.project.util.Parser;
+
 public class ListVocabActivity extends AppCompatActivity {
     ListView lv;
     WordAdapter adapter;
@@ -59,7 +63,6 @@ public class ListVocabActivity extends AppCompatActivity {
     @Override
     public void onDestroy() {
         // Don't forget to shutdown tts!
-
         super.onDestroy();
     }
 

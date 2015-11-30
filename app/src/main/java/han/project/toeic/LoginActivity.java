@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import han.project.mode.register;
+import han.project.util.MyDatabase;
+
 public class LoginActivity extends AppCompatActivity {
     EditText etUsername, etPassword;
     Button Signin, Signup;
@@ -85,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
                 try {
-                    register re = new register(username, password);
+                    han.project.mode.register re = new register(username, password);
                     db.insert(re);
                     Toast.makeText(getApplicationContext(), "Your account have been created ", Toast.LENGTH_SHORT);
                     dialog.cancel();

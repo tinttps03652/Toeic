@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ListView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -17,16 +19,20 @@ import com.google.android.gms.ads.AdView;
 import java.util.ArrayList;
 import java.util.List;
 
+import han.project.mode.Representative;
+import han.project.util.Parser;
+
 /**
- * Created by Han on 18/10/2015.
+ * Created by Han on 18/11/2015.
  */
 public class VocabFragment extends Fragment {
-    ListView lv;
     Representative re = null;
-    MyAdapter adapter;
     List<Representative> list;
     AdView mAdView;
-
+    EditText edt;
+    RecyclerView rv;
+    LinearLayoutManager llm;
+    RVAdapter rvAdapter;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,12 +42,24 @@ public class VocabFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.vocab_fragment, container, false);
-        lv = (ListView) view.findViewById(R.id.listView);
-        adapter = new MyAdapter(getActivity(), generateData());
-        lv.setAdapter(adapter);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        rv = (RecyclerView) view.findViewById(R.id.rv);
+        llm = new LinearLayoutManager(getActivity());
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        llm.scrollToPosition(0);
+        rv.setLayoutManager(llm);
+        rv.setHasFixedSize(true);
+        list = new ArrayList<>();
+        try {
+            list = Parser.parse(getActivity().getAssets().open("lessons.xml"));
+        } catch (Exception e) {
+            Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
+        }
+        rvAdapter = new RVAdapter(list);
+        rv.setAdapter(rvAdapter);
+        rv.setItemAnimator(new DefaultItemAnimator());
+        ItemClickSupport.addTo(rv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                 int index = position;
                 Intent i = new Intent(getActivity(), ListVocabActivity.class);
                 Representative obj = list.get(position);
@@ -55,21 +73,11 @@ public class VocabFragment extends Fragment {
         });
 
         mAdView = (AdView) view.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("BA562590DEC40F4051302BC23C801F64")
                 .build());
-        return view;
-    }
 
-    private List<Representative> generateData() {
-        list = new ArrayList<>();
-        try {
-            list = Parser.parse(getActivity().getAssets().open("lessons.xml"));
-        } catch (Exception e) {
-            Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
-        }
-        return list;
+        return view;
     }
 
 

@@ -60,7 +60,7 @@
                 android:value="han.project.toeic.MainActivity" />
         </activity>
         <activity
-            android:name="han.project.toeic.Review_Activity"
+            android:name="han.project.toeic.PracticeActivity"
             android:parentActivityName="han.project.toeic.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

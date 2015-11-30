@@ -12,16 +12,13 @@
     tools:context="han.project.toeic.MainActivity"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:padding="8dp">
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="#fff"
-        android:dividerHeight="3dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:id="@+id/listView" />
+        android:scrollbars="vertical"
+        tools:context=".MainActivity$VobabFragment"
+        android:id="@+id/rv"
+        />
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"

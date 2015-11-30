@@ -54,6 +54,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import han.project.util.DeveloperKey;
+
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
@@ -233,6 +235,29 @@ public final class YoutubeVideoList extends Activity implements OnFullscreenList
                     list.add(new VideoEntry("Lesson 17 Ordering Supplies Đặt hàng", "vt0ocCNuUqI"));
                     list.add(new VideoEntry("Lesson 18 Shipping Vận chuyển", "90oWpOHX8YQ"));
                     list.add(new VideoEntry("Lesson 19 Invoices Hóa đơn", "VkbHfwT83JA"));
+                    VIDEO_LIST = Collections.unmodifiableList(list);
+                    break;
+                case 1:
+
+                    list.add(new VideoEntry("Lesson 1 Contracts Hợp đồng", "_bNeQIcCHYs"));
+                    list.add(new VideoEntry("Lesson 2 Marketing Thị trường", "RMiGyC67kJ8"));
+                    list.add(new VideoEntry("Lesson 3 Warranties Bảo hành", "qU9qCldVEec"));
+                    list.add(new VideoEntry("Lesson 4 Business planning Kế hoach kinh doanh", "uby-Y9m07Ls"));
+                    list.add(new VideoEntry("Lesson 5 Conferences Hội nghị", "UMBwgTa2xt8"));
+                    list.add(new VideoEntry("Lesson 6 Computer Máy tính", "_FWLs42p_ls"));
+                    list.add(new VideoEntry("Lesson 7 Office Technology Công nghệ văn phòng", "cvloiAXBeGs"));
+                    list.add(new VideoEntry("Lesson 8 Office Procedures Quy trình làm việc", "rzEOmqjXg6c"));
+                    list.add(new VideoEntry("Lesson 9 Electronics Thiết bị điện tử", "q1E-eI3TdGs"));
+                    list.add(new VideoEntry("Lesson 10 Correspondence Thư tín thương mại", "dKZ0aU-DAig"));
+                    list.add(new VideoEntry("Lesson 11 Job advertising and Recruiting Quảng cáo việc làm và tuyển dụng", "DgjRy757K80"));
+                    list.add(new VideoEntry("Lesson 12 Applying and Interviewing Xin việc và phỏng vấn", "Epemzo9_9qs"));
+                    list.add(new VideoEntry("Lesson 13 Hiring and Training Tuyển dụng và đào tạo", "LFwRlnfG7I4"));
+                    list.add(new VideoEntry("Lesson 14 Salaries and Benifits Lương bổng và lợi ích", "w6MIEvxLQMM"));
+                    list.add(new VideoEntry("Lesson 15 Promotions, Pensions and Awards Đề bạt, tiền trợ cấp và khen thưởng", "hgpdOn4-KMs"));
+                    list.add(new VideoEntry("Lesson 16 Shopping Mua sắm", "fByIYGo05SU"));
+                    list.add(new VideoEntry("Lesson 17 Ordering Supplies Đặt hàng", "vt0ocCNuUqI"));
+                    list.add(new VideoEntry("Lesson 18 Shipping Vận chuyển", "90oWpOHX8YQ"));
+                    list.add(new VideoEntry("Lesson 19 Invoices Hóa đơn", "VkbHfwT83JA"));
                     list.add(new VideoEntry("Lesson 20 Inventory Kiểm kê hàng hóa", "k9iixIAv92s"));
                     list.add(new VideoEntry("Lesson 21 Banking Ngân hàng", "9V15qh7bWNg"));
                     list.add(new VideoEntry("Lesson 22 Accounting Kế toán", "lg2Z38IqByU"));
@@ -264,28 +289,6 @@ public final class YoutubeVideoList extends Activity implements OnFullscreenList
                     list.add(new VideoEntry("Lesson 48 Health Insurance Bảo hiểm y tế", "ZC3OReR4YXI"));
                     list.add(new VideoEntry("Lesson 49 Hospitals Bệnh viện", "TI7Ga645bZ4"));
                     list.add(new VideoEntry("Lesson 50 Pharmacy Hiệu thuốc, phòng dược", "00nYQSU1fdc"));
-                    VIDEO_LIST = Collections.unmodifiableList(list);
-                    break;
-                case 1:
-                    list.add(new VideoEntry("Lesson 1 Contracts Hợp đồng", "_bNeQIcCHYs"));
-                    list.add(new VideoEntry("Lesson 2 Marketing Thị trường", "RMiGyC67kJ8"));
-                    list.add(new VideoEntry("Lesson 3 Warranties Bảo hành", "qU9qCldVEec"));
-                    list.add(new VideoEntry("Lesson 4 Business planning Kế hoach kinh doanh", "uby-Y9m07Ls"));
-                    list.add(new VideoEntry("Lesson 5 Conferences Hội nghị", "UMBwgTa2xt8"));
-                    list.add(new VideoEntry("Lesson 6 Computer Máy tính", "_FWLs42p_ls"));
-                    list.add(new VideoEntry("Lesson 7 Office Technology Công nghệ văn phòng", "cvloiAXBeGs"));
-                    list.add(new VideoEntry("Lesson 8 Office Procedures Quy trình làm việc", "rzEOmqjXg6c"));
-                    list.add(new VideoEntry("Lesson 9 Electronics Thiết bị điện tử", "q1E-eI3TdGs"));
-                    list.add(new VideoEntry("Lesson 10 Correspondence Thư tín thương mại", "dKZ0aU-DAig"));
-                    list.add(new VideoEntry("Lesson 11 Job advertising and Recruiting Quảng cáo việc làm và tuyển dụng", "DgjRy757K80"));
-                    list.add(new VideoEntry("Lesson 12 Applying and Interviewing Xin việc và phỏng vấn", "Epemzo9_9qs"));
-                    list.add(new VideoEntry("Lesson 13 Hiring and Training Tuyển dụng và đào tạo", "LFwRlnfG7I4"));
-                    list.add(new VideoEntry("Lesson 14 Salaries and Benifits Lương bổng và lợi ích", "w6MIEvxLQMM"));
-                    list.add(new VideoEntry("Lesson 15 Promotions, Pensions and Awards Đề bạt, tiền trợ cấp và khen thưởng", "hgpdOn4-KMs"));
-                    list.add(new VideoEntry("Lesson 16 Shopping Mua sắm", "fByIYGo05SU"));
-                    list.add(new VideoEntry("Lesson 17 Ordering Supplies Đặt hàng", "vt0ocCNuUqI"));
-                    list.add(new VideoEntry("Lesson 18 Shipping Vận chuyển", "90oWpOHX8YQ"));
-                    list.add(new VideoEntry("Lesson 19 Invoices Hóa đơn", "VkbHfwT83JA"));
                     VIDEO_LIST = Collections.unmodifiableList(list);
                     break;
             }

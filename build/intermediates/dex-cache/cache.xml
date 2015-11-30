@@ -2,25 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\jars\classes.jar"
+        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
-        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-2d2863fc77e6650e643fc0f3eb53963a2e30ae65.jar" />
-    </item>
-    <item
-        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.4\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="df559ab8a9d5d44cf0a49dbb2be402637b90ba90">
-        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\release\classes-592604ae989ce27ee530eecc874c01704147172a.jar" />
-    </item>
-    <item
-        jar="D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="27775d59b16610ac76f1b83693fedd9520396332">
-        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-742e1664a21fc9782d42ee50ac1f4b4abf7593ac.jar" />
+        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-08eb4923e3199cfad5f014107ea87603d5e240d4.jar" />
     </item>
 
 </items>

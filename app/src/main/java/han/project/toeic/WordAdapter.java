@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import han.project.mode.WordModel;
+
 /**
  * Created by Han on 11/11/2015.
  */
