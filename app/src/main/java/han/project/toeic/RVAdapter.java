@@ -29,7 +29,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ReprentativeViewHo
     @Override
     public ReprentativeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         inflater = LayoutInflater.from(parent.getContext());
-        v = inflater.inflate(R.layout.cardview_layout, parent, false);
+        v = inflater.inflate(R.layout.cardview_lesson_layout, parent, false);
         return new ReprentativeViewHolder(v);
     }
 

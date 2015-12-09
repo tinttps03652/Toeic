@@ -13,6 +13,7 @@ public class AudioPlayer {
     String fileName;
     Context contex;
     MediaPlayer mp;
+    private final static int MAX_VOLUME = 100;
 
     //Constructor
     public AudioPlayer(String name, Context context) {
@@ -24,6 +25,8 @@ public class AudioPlayer {
     //Play Audio
     public void playAudio() {
         mp = new MediaPlayer();
+        final float volume = (float) (1 - (Math.log(MAX_VOLUME - 50) / Math.log(MAX_VOLUME)));
+        mp.setVolume(volume, volume);
         try {
             if (mp.isPlaying()) {
                 mp.stop();
@@ -36,8 +39,7 @@ public class AudioPlayer {
                     descriptor.getStartOffset(), descriptor.getLength());
             descriptor.close();
             mp.prepare();
-            mp.setVolume(3f, 3f);
-
+            mp.setVolume(1.0f, 1.0f);
             mp.start();
 
         } catch (IllegalArgumentException e) {

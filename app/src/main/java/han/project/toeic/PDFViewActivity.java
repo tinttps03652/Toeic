@@ -15,7 +15,7 @@ import static java.lang.String.format;
 public class PDFViewActivity extends AppCompatActivity implements OnPageChangeListener {
     PDFView pdf;
     private Toolbar toolbar;
-    public static final String FILE[] = {"unit1_present_tenses.pdf", "unit2_past_tenses.pdf", "unit3_future_tenses.pdf",
+    private static final String FILE[] = {"unit1_present_tenses.pdf", "unit2_past_tenses.pdf", "unit3_future_tenses.pdf",
             "unit4_v_ing.pdf", "unit5_to_infinitive.pdf", "unit6_bare_infinitive_gerund_or_infinitive.pdf", "unit7_modal_verbs.pdf",
             "unit8_sentences_elements.pdf", "unit9_passive_voice1.pdf", "unit10_passive_voice2.pdf", "unit11_comparisons.pdf",
             "unit12_conditionals.pdf", "unit13_wishes.pdf", "unit14_relative_clauses.pdf", "unit15_exclamatory_sentences.pdf",
@@ -37,7 +37,6 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
         getSupportActionBar().setTitle(title);
         pdfName = FILE[position];
         display(pdfName, true);
-
     }
 
     private void display(String assetFileName, boolean jumpToFirstPage) {

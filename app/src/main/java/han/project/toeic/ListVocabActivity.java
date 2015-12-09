@@ -24,7 +24,7 @@ public class ListVocabActivity extends AppCompatActivity {
     WordModel word;
     String vocabulary[] = {"xmlfile/contracts.xml", "xmlfile/marketing.xml", "xmlfile/warranties.xml", "xmlfile/business_planning.xml", "xmlfile/conferences.xml",
             "xmlfile/computers_internet.xml", "xmlfile/office_technology.xml", "xmlfile/office_procedures.xml", "xmlfile/electronics.xml", "xmlfile/correspondence.xml",
-            "xmlfile/jobads_recruitment.xml","xmlfile/apply_interviewing.xml","xmlfile/hiring_traning.xml","xmlfile/salaries_benefits.xml","xmlfile/promotions_pensions_awards.xml",
+            "xmlfile/job_ad_recruitment.xml","xmlfile/apply_interviewing.xml","xmlfile/hiring_traning.xml","xmlfile/salaries_benefits.xml","xmlfile/promotions_pensions_awards.xml",
             "xmlfile/shopping.xml", "xmlfile/ordering_supplies.xml","xmlfile/shipping.xml","xmlfile/invoices.xml","xmlfile/inventory.xml"
     };
     String pos;

@@ -6,7 +6,7 @@
         jumboMode="false"
         revision="23.0.1"
         sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
-        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\debug\classes-08eb4923e3199cfad5f014107ea87603d5e240d4.jar" />
+        <dex dex="D:\GITHUB\Toeic\app\build\intermediates\pre-dexed\release\classes-08eb4923e3199cfad5f014107ea87603d5e240d4.jar" />
     </item>
 
 </items>

@@ -33,6 +33,7 @@ public class ResultActivity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 Intent i = new Intent(ResultActivity.this,MainActivity.class);
                 startActivity(i);
             }

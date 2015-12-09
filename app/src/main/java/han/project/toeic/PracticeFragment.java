@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import han.project.mode.Representative;
@@ -27,7 +28,7 @@ public class PracticeFragment extends Fragment{
     RecyclerView rv;
     LinearLayoutManager llm;
     RVAdapter rvAdapter;
-
+    public static   ArrayList<HashMap<String,String>> listqiuz;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class PracticeFragment extends Fragment{
         rv.setHasFixedSize(true);
         list = new ArrayList<>();
         try{
-            list = Parser.parse(getActivity().getAssets().open("lessons.xml"));
+            list = Parser.parse(getActivity().getAssets().open("xmlfile/lessons.xml"));
         }catch(Exception e){
             Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
         }
@@ -51,6 +52,7 @@ public class PracticeFragment extends Fragment{
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                 int index = position;
+                PracticeFragment.listqiuz =new ArrayList<HashMap<String, String>>();
                 Intent i = new Intent(getActivity(), PracticeActivity.class);
                 Representative obj = list.get(position);
                 String title = obj.getTitle();

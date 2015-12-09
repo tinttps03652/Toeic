@@ -50,7 +50,7 @@ public class VocabFragment extends Fragment {
         rv.setHasFixedSize(true);
         list = new ArrayList<>();
         try {
-            list = Parser.parse(getActivity().getAssets().open("lessons.xml"));
+            list = Parser.parse(getActivity().getAssets().open("xmlfile/lessons.xml"));
         } catch (Exception e) {
             Toast.makeText(getActivity(), "error: " + e, Toast.LENGTH_SHORT).show();
         }
@@ -60,12 +60,11 @@ public class VocabFragment extends Fragment {
         ItemClickSupport.addTo(rv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                int index = position;
                 Intent i = new Intent(getActivity(), ListVocabActivity.class);
                 Representative obj = list.get(position);
                 String title = obj.getTitle();
                 Bundle b = new Bundle();
-                b.putInt("index", index);
+                b.putInt("index", position);
                 b.putString("title", title);
                 i.putExtras(b);
                 startActivity(i);
@@ -74,11 +73,17 @@ public class VocabFragment extends Fragment {
 
         mAdView = (AdView) view.findViewById(R.id.adView);
         mAdView.loadAd(new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("BA562590DEC40F4051302BC23C801F64")
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("CDA9ED0B881E0599F3EC02602A5487D3")
                 .build());
-
         return view;
     }
 
+    @Override
+    public void onDestroy() {
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
 
+        super.onDestroy();
+    }
 }

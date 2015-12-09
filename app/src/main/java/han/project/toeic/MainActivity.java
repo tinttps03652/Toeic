@@ -106,23 +106,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void showDialog() {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle("Hello User");
-        alert.setMessage("Developers: Group 3 \n" +
-                "Email: hanthienduc.96@gmail.com \n" +
-                "Phone: 0943 414 425 \n" +
-                "We want to make user have a good exprience so if you have any problem please contact with us through email above");
-        alert.setIcon(R.mipmap.ic_launcher);
-        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        alert.show();
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -173,5 +156,22 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse("mailto:hanthienduc.96@gmail.com")); // or just "mailto:" for blank
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // this will make such that when user returns to your app, your app is displayed, instead of the email app.
         startActivity(intent);
+    }
+
+    public void showDialog() {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Hello User");
+        alert.setMessage("Developers: Group 3 \n" +
+                "Email: hanthienduc.96@gmail.com " +
+                "\n Phone: 0943 414 425 \n" +
+                "We hope this app will be helpful and beneficial for your toeic vocabulary, if you have any problem please contact with us through email above");
+        alert.setIcon(R.mipmap.ic_launcher);
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        alert.show();
     }
 }
