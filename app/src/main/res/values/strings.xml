@@ -19,7 +19,7 @@
         <item>Unit 3 - Future tenses</item>
         <item>Unit 4 - V-ing</item>
         <item>Unit 5 - To-infinitive</item>
-        <item>Unit 6: Bare infinitive, Gerund or infinitive</item>
+        <item>Unit 6 - Bare infinitive, Gerund or infinitive</item>
         <item>Unit 7 - Modal verbs</item>
         <item>Unit 8 - Sentence elements</item>
         <item>Unit 9 - Passive Voice 1</item>
@@ -31,13 +31,13 @@
         <item>Unit 15 - Exclamatory sentences</item>
         <item>Unit 16 - Reported Speech</item>
         <item>Unit 17 - Types of questions</item>
-        <item>Unit 18: Subjunctive structures</item>
-        <item>Unit 19: Subject-verb agreement</item>
+        <item>Unit 18 - Subjunctive structures</item>
+        <item>Unit 19 - Subject-verb agreement</item>
         <item>Unit 20 - Inversion of verbs</item>
-        <item>Unit 21: Emphasis</item>
-        <item>Unit 22: Relationships between ideas (1)</item>
-        <item>Unit 23: Relationships between ideas (2)</item>
-        <item>Unit 24: Relationships between ideas (3)</item>
+        <item>Unit 21 - Emphasis</item>
+        <item>Unit 22 - Relationships between ideas (1)</item>
+        <item>Unit 23 - Relationships between ideas (2)</item>
+        <item>Unit 24 - Relationships between ideas (3)</item>
 
     </string-array>
     <string-array name="grammar_meaning">
@@ -121,8 +121,8 @@
     <string-array name="video_list">
         <item>Toeic Trick</item>
         <item>600 Essential Words Vocabulary</item>
-        <item>600 Essential Words Listening</item>
-        <item>600 Essential Words Reading</item>
+        <item>600 Essential Words Short Conversation</item>
+        <item>Toeic Reading</item>
         <item>600 Essential Words Practice</item>
         <item>Toeic Listening Test</item>
         <item>Toeic Grammar</item>
@@ -133,6 +133,22 @@
         <item>Toeic Economy - Toeic Every day</item>
         <item>Toeic VTV2 - MS Phuong</item>
         <item>Stater Toeic Third Edition</item>
+    </string-array>
+    <string-array name="video_list_meaning">
+        <item>Mẹo toeic</item>
+        <item>600 từ vựng cần thiết</item>
+        <item>600 từ vựng cần thiết trong đàm thoại ngắn</item>
+        <item>Đọc Toeic</item>
+        <item>luyện tập 600 từ vựng </item>
+        <item>Kiểm tra nghe trong toeic</item>
+        <item>Ngữ pháp trong toeic</item>
+        <item>Bài kiểm tra toeic</item>
+        <item>Luyện tập phần nghe toeic</item>
+        <item>Sách Analyst </item>
+        <item>Bài kiểm tra toeic của longman</item>
+        <item>Tiếng anh mỗi ngày</item>
+        <item>Toeic VTV2 - MS Phuong</item>
+        <item>Sách luyện thi toeic Stater Toeic 3rd</item>
     </string-array>
     <string name="banner_ad_unit_id">ca-app-pub-7506437276090830/6459210308</string>
 </resources>

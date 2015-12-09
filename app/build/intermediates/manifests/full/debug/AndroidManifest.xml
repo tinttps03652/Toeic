@@ -61,7 +61,8 @@
         </activity>
         <activity
             android:name="han.project.toeic.PracticeActivity"
-            android:parentActivityName="han.project.toeic.MainActivity" >
+            android:parentActivityName="han.project.toeic.MainActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="han.project.toeic.MainActivity" />

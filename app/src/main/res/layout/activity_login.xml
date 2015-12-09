@@ -29,14 +29,19 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_below="@+id/textView7"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="32dp"
             android:src="@mipmap/ic_launcher" />
-
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true">
         <EditText
             android:id="@+id/edtUsername"
             android:layout_width="250dp"
@@ -46,27 +51,33 @@
             android:ems="20"
             android:hint="Enter userame:"
             android:inputType="textPersonName" />
-
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input1"
+            android:layout_centerHorizontal="true">
         <EditText
             android:id="@+id/edtPassword"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/edtUsername"
-            android:layout_alignStart="@+id/edtUsername"
-            android:layout_below="@+id/edtUsername"
+            android:layout_alignLeft="@+id/input1"
+            android:layout_alignStart="@+id/input1"
+            android:layout_below="@+id/input1"
             android:ems="10"
             android:hint="Enter password:"
             android:inputType="textPassword" />
-
+        </android.support.design.widget.TextInputLayout>
         <Button
             android:id="@+id/btnSignin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/edtPassword"
-            android:layout_alignLeft="@+id/edtPassword"
-            android:layout_alignRight="@+id/edtPassword"
-            android:layout_alignStart="@+id/edtPassword"
-            android:layout_below="@+id/edtPassword"
+            android:layout_alignEnd="@+id/input2"
+            android:layout_alignLeft="@+id/input2"
+            android:layout_alignRight="@+id/input2"
+            android:layout_alignStart="@+id/input2"
+            android:layout_below="@+id/input2"
             android:text="Sign in" />
 
         <Button

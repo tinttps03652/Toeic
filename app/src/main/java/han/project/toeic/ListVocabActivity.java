@@ -1,5 +1,7 @@
 package han.project.toeic;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -20,10 +22,10 @@ public class ListVocabActivity extends AppCompatActivity {
     WordAdapter adapter;
     List<WordModel> list;
     WordModel word;
-    String vocabulary[] = {"contracts.xml", "marketing.xml", "warranties.xml", "business_planning.xml", "conferences.xml",
-            "computers_internet.xml", "office_technology.xml", "office_procedures.xml", "electronics.xml", "correspondence.xml"
-
-
+    String vocabulary[] = {"xmlfile/contracts.xml", "xmlfile/marketing.xml", "xmlfile/warranties.xml", "xmlfile/business_planning.xml", "xmlfile/conferences.xml",
+            "xmlfile/computers_internet.xml", "xmlfile/office_technology.xml", "xmlfile/office_procedures.xml", "xmlfile/electronics.xml", "xmlfile/correspondence.xml",
+            "xmlfile/jobads_recruitment.xml","xmlfile/apply_interviewing.xml","xmlfile/hiring_traning.xml","xmlfile/salaries_benefits.xml","xmlfile/promotions_pensions_awards.xml",
+            "xmlfile/shopping.xml", "xmlfile/ordering_supplies.xml","xmlfile/shipping.xml","xmlfile/invoices.xml","xmlfile/inventory.xml"
     };
     String pos;
     AudioPlayer au;
@@ -57,7 +59,8 @@ public class ListVocabActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle(title);
-
+        AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        am.setStreamVolume(AudioManager.STREAM_MUSIC, am.getStreamMaxVolume(AudioManager.STREAM_MUSIC), 0);
     }
 
     @Override
