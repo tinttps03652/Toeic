@@ -19,7 +19,7 @@
         <item>Unit 3 - Future tenses</item>
         <item>Unit 4 - V-ing</item>
         <item>Unit 5 - To-infinitive</item>
-        <item>Unit 6: Bare infinitive, Gerund or infinitive</item>
+        <item>Unit 6 - Bare infinitive, Gerund or infinitive</item>
         <item>Unit 7 - Modal verbs</item>
         <item>Unit 8 - Sentence elements</item>
         <item>Unit 9 - Passive Voice 1</item>
@@ -31,13 +31,13 @@
         <item>Unit 15 - Exclamatory sentences</item>
         <item>Unit 16 - Reported Speech</item>
         <item>Unit 17 - Types of questions</item>
-        <item>Unit 18: Subjunctive structures</item>
-        <item>Unit 19: Subject-verb agreement</item>
+        <item>Unit 18 - Subjunctive structures</item>
+        <item>Unit 19 - Subject-verb agreement</item>
         <item>Unit 20 - Inversion of verbs</item>
-        <item>Unit 21: Emphasis</item>
-        <item>Unit 22: Relationships between ideas (1)</item>
-        <item>Unit 23: Relationships between ideas (2)</item>
-        <item>Unit 24: Relationships between ideas (3)</item>
+        <item>Unit 21 - Emphasis</item>
+        <item>Unit 22 - Relationships between ideas (1)</item>
+        <item>Unit 23 - Relationships between ideas (2)</item>
+        <item>Unit 24 - Relationships between ideas (3)</item>
 
     </string-array>
     <string-array name="grammar_meaning">
@@ -67,54 +67,88 @@
         <item>Quan hệ giữa các ý trong câu:Quan hệ nhượng bộ - Quan hệ mục đích</item>
     </string-array>
     <string-array name="lessons_practice">
-        <item>Contracts</item>
-        <item>Marketing</item>
-        <item>Warranties</item>
-        <item>Business Planning</item>
-        <item>Conferences</item>
-        <item>Computers and The internet</item>
-        <item>Office Technology</item>
-        <item>Office Procedures</item>
-        <item>Electronics</item>
-        <item>Correspondence</item>
-        <item>Job Advertising and Recruiting</item>
-        <item>Applying and Interviewing</item>
-        <item>Hiring and Training</item>
-        <item>Salaries and benefits</item>
-        <item>Promotions, Pensions and Awards</item>
-        <item>Shopping</item>
-        <item>Ordering Supplies</item>
-        <item>Shipping</item>
-        <item>Invoices</item>
-        <item>Inventory</item>
-        <item>Banking</item>
-        <item>Accounting</item>
-        <item>Investments</item>
-        <item>Taxes</item>
-        <item>Property and department</item>
-        <item> Board Meetings and committees</item>
-        <item>Quality control</item>
-        <item>Product  Development</item>
-        <item>Renting and Leasing</item>
-        <item>Renting and Leasing</item>
-        <item>Eating out</item>
-        <item>Ordering Lunch</item>
-        <item>Cooking as a career</item>
-        <item>Events</item>
-        <item>General Travel</item>
-        <item>Airlines</item>
-        <item>Trains</item>
-        <item>Hotels</item>
-        <item>Car Rentals</item>
-        <item>Movies</item>
-        <item>Theater</item>
-        <item>Music</item>
-        <item>Museums</item>
-        <item>Media</item>
-        <item>Doctor’s Office</item>
-        <item>Dentist’s office</item>
-        <item>Health Insurance</item>
-        <item>Hospitals</item>
-        <item>Pharmacy</item>
+        <item>Lesson 1 - Contracts</item>
+        <item>Lesson 2 - Marketing</item>
+        <item>Lesson 3 - Warranties</item>
+        <item>Lesson 4 - Business Planning</item>
+        <item>Lesson 5 - Conferences</item>
+        <item>Lesson 6 - Computers and The internet</item>
+        <item>Lesson 7 - Office Technology</item>
+        <item>Lesson 8 - Office Procedures</item>
+        <item>Lesson 9 - Electronics</item>
+        <item>Lesson 10 - Correspondence</item>
+        <item>Lesson 11 - Job Advertising and Recruiting</item>
+        <item>Lesson 12 - Applying and Interviewing</item>
+        <item>Lesson 13 - Hiring and Training</item>
+        <item>Lesson 14 - Salaries and benefits</item>
+        <item>Lesson 15 - Promotions, Pensions and Awards</item>
+        <item>Lesson 16 - Shopping</item>
+        <item>Lesson 17 - Ordering Supplies</item>
+        <item>Lesson 18 - Shipping</item>
+        <item>Lesson 19 - Invoices</item>
+        <item>Lesson 20 - Inventory</item>
+        <item>Lesson 21 - Banking</item>
+        <item>Lesson 22 - Accounting</item>
+        <item>Lesson 23 - Investments</item>
+        <item>Lesson 24 - Taxes</item>
+        <item>Lesson 25 - Financial statements</item>
+        <item>Lesson 26 - Property and department</item>
+        <item>Lesson 27 - Board Meetings and committees</item>
+        <item>Lesson 28 - Quality control</item>
+        <item>Lesson 29 - Product  Development</item>
+        <item>Lesson 30 - Renting and Leasing</item>
+        <item>Lesson 31 - Selecting a Restaurant</item>
+        <item>Lesson 32 - Eating out</item>
+        <item>Lesson 33 - Ordering Lunch</item>
+        <item>Lesson 34 - Cooking as a career</item>
+        <item>Lesson 35 - Events</item>
+        <item>Lesson 36 - General Travel</item>
+        <item>Lesson 37 - Airlines</item>
+        <item>Lesson 38 - Trains</item>
+        <item>Lesson 39 - Hotels</item>
+        <item>Lesson 40 - Car Rentals</item>
+        <item>Lesson 41 - Movies</item>
+        <item>Lesson 42 - Theater</item>
+        <item>Lesson 43 - Music</item>
+        <item>Lesson 44 - Museums</item>
+        <item>Lesson 45 - Media</item>
+        <item>Lesson 46 - Doctor’s Office</item>
+        <item>Lesson 47 - Dentist’s office</item>
+        <item>Lesson 48 - Health Insurance</item>
+        <item>Lesson 49 - Hospitals</item>
+        <item>Lesson 50 - Pharmacy</item>
     </string-array>
+    <string-array name="video_list">
+        <item>Toeic Trick</item>
+        <item>600 Essential Words Vocabulary</item>
+        <item>600 Essential Words Short Conversation</item>
+        <item>Toeic Reading</item>
+        <item>600 Essential Words Practice</item>
+        <item>Toeic Listening Test</item>
+        <item>Toeic Grammar</item>
+        <item>Toeic Full Test</item>
+        <item>Toeic Listening Practice</item>
+        <item>Toeic - Analyst</item>
+        <item>Longman Toeic Test </item>
+        <item>Toeic Economy - Toeic Every day</item>
+        <item>Toeic VTV2 - MS Phuong</item>
+        <item>Stater Toeic Third Edition</item>
+    </string-array>
+    <string-array name="video_list_meaning">
+        <item>Mẹo toeic</item>
+        <item>600 từ vựng cần thiết</item>
+        <item>600 từ vựng cần thiết trong đàm thoại ngắn</item>
+        <item>Đọc Toeic</item>
+        <item>luyện tập 600 từ vựng </item>
+        <item>Kiểm tra nghe trong toeic</item>
+        <item>Ngữ pháp trong toeic</item>
+        <item>Bài kiểm tra toeic</item>
+        <item>Luyện tập phần nghe toeic</item>
+        <item>Sách Analyst </item>
+        <item>Bài kiểm tra toeic của longman</item>
+        <item>Tiếng anh mỗi ngày</item>
+        <item>Toeic VTV2 - MS Phuong</item>
+        <item>Sách luyện thi toeic Stater Toeic 3rd</item>
+    </string-array>
+    <string name="banner_ad_unit_id">ca-app-pub-7506437276090830/6459210308</string>
 </resources>

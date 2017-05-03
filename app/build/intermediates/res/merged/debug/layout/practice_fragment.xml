@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#fff"
+    android:padding="8dp"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center_vertical"
-        android:divider="#ccc"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp" />
-
-    <Button
-        android:id="@+id/button2"
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Start" />
+        android:scrollbars="vertical"
+        tools:context=".MainActivity$VobabFragment"
+        android:id="@+id/rv"
+        />
 </RelativeLayout>
 <!-- From: file:/D:/GITHUB/Toeic/app/src/main/res/layout/practice_fragment.xml -->

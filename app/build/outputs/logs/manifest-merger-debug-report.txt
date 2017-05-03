@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-75:12
 	package
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
@@ -15,10 +15,11 @@ ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:7:5-44:19
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:7:5-73:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:22:5-20
@@ -27,10 +28,17 @@ MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\in
 MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [de.hdodenhof:circleimageview:2.0.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:11:9-35
+	android:uiOptions
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:13:9-53
 	android:allowBackup
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
@@ -38,13 +46,13 @@ MERGED from [de.hdodenhof:circleimageview:2.0.0] D:\GITHUB\Toeic\app\build\inter
 	android:theme
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:12:9-47
 activity#han.project.toeic.MainActivity
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:13:9-17:20
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:14:9-17:54
 	android:label
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:16:13-45
 	android:theme
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:16:13-56
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:17:13-51
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:15:13-41
 activity#han.project.toeic.ListVocabActivity
 ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:label
@@ -61,36 +69,62 @@ ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:23:13-25:66
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:25:17-63
 	android:name
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:24:17-63
-activity#han.project.toeic.VideoListDemoActivity
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:27:9-31:20
+activity#han.project.toeic.YoutubeVideoList
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:label
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:30:13-52
+	android:parentActivityName
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:31:13-55
 	android:configChanges
 		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:29:13-74
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:28:13-50
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:28:13-45
 activity#han.project.toeic.SplashScreen
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:32:9-41:20
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:36:9-45:20
 	android:label
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:38:13-45
 	android:theme
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:35:13-56
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:39:13-56
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:33:13-41
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:37:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:36:13-40:29
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:37:17-69
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:39:17-77
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:43:27-74
 activity#han.project.toeic.PDFViewActivity
-ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:42:9-43:20
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:46:9-54:20
+	android:label
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:48:13-38
+	android:parentActivityName
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:49:13-55
+	android:theme
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:50:13-51
 	android:name
-		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:42:19-50
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:47:13-44
+activity#han.project.toeic.PracticeActivity
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:55:9-63:20
+	android:parentActivityName
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:57:13-55
+	android:windowSoftInputMode
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:58:13-65
+	android:name
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:56:13-45
+activity#han.project.toeic.ResultActivity
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:64:9-71:20
+	android:parentActivityName
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:66:13-55
+	android:name
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:65:13-43
+activity#han.project.toeic.LoginActivity
+ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:72:9-60
+	android:name
+		ADDED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml:72:19-48
 uses-sdk
 INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43
@@ -103,9 +137,39 @@ MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\in
 MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
 MERGED from [de.hdodenhof:circleimageview:2.0.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.joanzapata.pdfview:android-pdfview:1.0.4] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.4\AndroidManifest.xml:23:2-69
+MERGED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
 		INJECTED from D:\GITHUB\Toeic\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:21:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:21:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:26:9-29:64
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:28:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:29:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:27:13-65
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:30:19-91
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.3.0] D:\GITHUB\Toeic\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:22:13-58

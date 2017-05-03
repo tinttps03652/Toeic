@@ -4,11 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
 /**
  * Created by Han on 18/10/2015.
@@ -24,25 +25,30 @@ public class GrammarFragment extends Fragment {
             R.mipmap.relationships_between_ideas3};
     String title[] = {};
     String meaning[] = {};
-    ListView lv;
-    GrammarAdapter adapter2;
-
+    GrammarRVAdapter rvAdapter;
+    RecyclerView rv;
+    LinearLayoutManager llm;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.grammar_fragment, container, false);
-        lv = (ListView) view.findViewById(R.id.listView3);
+        rv = (RecyclerView) view.findViewById(R.id.rv1);
+        llm = new LinearLayoutManager(getActivity());
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        llm.scrollToPosition(0);
+        rv.setLayoutManager(llm);
+        rv.setHasFixedSize(true);
+        rv.setItemAnimator(new DefaultItemAnimator());
         title = getActivity().getResources().getStringArray(R.array.grammar_lessons);
         meaning = getActivity().getResources().getStringArray(R.array.grammar_meaning);
-        //adapter = new Adapter(getActivity());
-        //lv.setAdapter(adapter);
-        adapter2 = new GrammarAdapter(getActivity(), images, title, meaning);
-        lv.setAdapter(adapter2);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        rvAdapter = new GrammarRVAdapter(images, title, meaning);
+        rv.setAdapter(rvAdapter);
+        ItemClickSupport.addTo(rv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                 Intent i = new Intent(getActivity(), PDFViewActivity.class);
-                i.putExtra("position",position);
+                i.putExtra("position", position);
+                i.putExtra("title", title[position].toString());
                 startActivity(i);
             }
         });
